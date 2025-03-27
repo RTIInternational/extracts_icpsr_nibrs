@@ -1,5 +1,5 @@
 # extracts_icpsr_nibrs
-Replicates the ICPSR NIBRS extract files
+This set of scripts and lookup tables was created to reverse engineer the production of ICPSR NIBRS extract files.
 
 `raw_to_extract.R` processes NIBRS master data files and converts them to the ICPSR extract files.
 
