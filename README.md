@@ -1,4 +1,4 @@
-# icpsr_nibrs_extracts
+# extracts_icpsr_nibrs
 Replicates the ICPSR NIBRS extract files
 
 `raw_to_extract.R` processes NIBRS master data files and converts them to the ICPSR extract files.
