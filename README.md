@@ -19,9 +19,11 @@ https://www.icpsr.umich.edu/web/pages/NACJD/NIBRS/varlist.html
 
 To run (master file based process):
 - Download the NIBRS master file for the year of interest
-- Modify the bash script `generate_raw_segments.sh` as needed to change the master file name being processed
-- Run the R script to generate a data frame from the raw data
-- Save data frame to target format: spss, stata, csv, etc
+- Run the bash script `generate_raw_segments.sh` against the downloaded master file to create the individual segments:
+```{bash}
+./generate_raw_segments.sh <path_to_master_file/> <year/>
+```
+- Run the `raw_to_extract.R` script, modifying the configuration variables at the start of the script, to generate the target ICPSR file(s)
 
 ## Data Decisions
 In an attempt to match the ICPSR extract files, we've mapped NIBRS cell values to ICPSR cell values within the lookup tables.
