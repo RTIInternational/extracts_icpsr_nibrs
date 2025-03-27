@@ -24,6 +24,7 @@ To run (master file based process):
 ./generate_raw_segments.sh <path_to_master_file/> <year/>
 ```
 - Run the `raw_to_extract.R` script, modifying the configuration variables at the start of the script, to generate the target ICPSR file(s)
+- **Note:** The `raw_to_extract.R` script consumes a lot of memory; sections were run manually with calls to gc() to free up unused memory, you may want to run fewer sections of code at a time if you run into memory issues on your machine. 
 
 ## Data Decisions
 In an attempt to match the ICPSR extract files, we've mapped NIBRS cell values to ICPSR cell values within the lookup tables.
